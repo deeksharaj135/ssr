@@ -1,8 +1,8 @@
 from Bio import SeqIO
 
 # Input files
-fasta_file = "indica/indica.fasta"  # Use forward slashes for cross-platform compatibility
-misa_file = "indica/indica.fasta.misa"
+fasta_file = "indica.fasta"  
+misa_file = "indica_final.fasta.txt"
 
 # Read the genome
 record = SeqIO.read(fasta_file, "fasta")

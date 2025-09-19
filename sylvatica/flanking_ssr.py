@@ -2,7 +2,7 @@ from Bio import SeqIO
 
 # Input files
 fasta_file = "sylvatica.fasta"
-misa_file = "sylvatica.fasta.misa"
+misa_file = "sylvatica_final.fasta.txt"
 
 # Read the genome
 record = SeqIO.read(fasta_file, "fasta")

@@ -1,8 +1,8 @@
 from Bio import SeqIO
 
 # Input files
-fasta_file = "indica/indica.fasta"  # Use forward slashes for cross-platform compatibility
-misa_file = "indica/indica.fasta.misa"
+fasta_file = "rindica\indica.fasta"
+misa_file = "indica_final.fasta.txt"
 
 # Read the genome
 record = SeqIO.read(fasta_file, "fasta")
@@ -43,4 +43,4 @@ with open("all_ssr_flanks.fasta", "w") as out:
             out.write(f">{seq_name}_SSR{ssr_number}_{motif}_{start}_{end}\n{ssr_seq}\n")
             out.write(f">{seq_name}_SSR{ssr_number}_{motif}_{start}_{end}_downstream200\n{downstream}\n")
 
-print("All SSRs with flanking regions saved in all_ssr_flanks.fasta")
+print("✅ All SSRs with flanking regions saved in all_ssr_flanks.fasta")
